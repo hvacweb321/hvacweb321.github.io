@@ -3736,4 +3736,494 @@ font-weight: 500;
   flex-wrap: wrap;
 }
 }
+/*media responsive additions*/
+@media (min-width: 385px) and (max-width: 410px) {
+
+  .text-container h1{
+    font-size: 2.9em;
+    font-family: "Bebas Neue", sans-serif;
+font-style: italic;
+font-weight: 500;
+}
+  .text-container p{
+    font-size: .9em;
+}
+
+.text-container {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 90%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #DE6A12;
+  border: 15px solid #DE6A12;
+  border-radius: 3.5rem;
+  margin-top: 24em;
+}  .logo{
+  margin-top: .5em;
+  width: 11em;
+}
+.carousel-item{
+  height: 1100px;
+}
+/* Gradient overlay */
+.gradient-overlay {
+  position: absolute;
+  top: 180%;
+  left: 0;
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  background: linear-gradient(to top, white, white(255, 255, 255, 0));
+  z-index: 1111;
+}
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.carouesl-btn{
+  display: none;
+}
+.carousel-slide-2{
+  display: none;
+}
+.form-header {
+  text-align: center;
+  font-size: 28px;
+  padding-top: .65em;
+  margin: 0 auto 20px;
+  color: #fafafa;
+  width: 100%;
+  background: #000d13;
+  height: 80px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 51 !important;
+  position: absolute;
+}
+
+/* CSS to change the font and size of the placeholder text */
+.form-control::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px; /* Change font size as needed */
+  color: #686868; /* Change placeholder color as needed */
+  font-weight: 400;
+  
+}
+.form-content {
+  padding-top: 6.8em !important;
+}
+.form-container {
+  position: relative;
+}
+.form-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Height of the border */
+    background: #2083BD;
+    z-index: -1; /* Ensure it stays behind the text */
+}
+.hvac::after {
+  content: "";
+  position: absolute;
+  bottom: 4px !important; /* Adjust the distance between text and underline */
+  left: 0;
+  width: 100%;
+  border-bottom: 5px solid #2083BD !important; /* Adjust the thickness as needed */
+
+  }
+  .hvac {
+    color: #fff !important;
+    position: relative;
+  }
+.quote-form {
+  width: 94%;
+  margin-left: 3.4% !important;
+  max-width: 700px; /* Adjust the maximum width as needed */
+  margin: auto;
+  border-bottom: 10px solid #2083BD;
+
+  padding: 0px;
+  background-color: #ffffff94;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  order: 2; /* Set the order to 2 to move the form below the text */
+  margin-top: 23.8em !important;
+  height: 500px;
+
+}
+
+.btn-colour-form {
+  background-color: #000d13;
+  padding: 0.75em 2.51em;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.23em;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Optional: for rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Outer glow effect */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+
+/* Set up the form row to use flexbox */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: -20px; /* Adjust the gap as needed */
+  margin-bottom: 0px; /* Space between rows */
+}
+
+/* Ensure form-group elements within form-row take up equal space */
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Additional styles for input and textarea elements */
+.form-group input, .form-group textarea {
+  width: 100%;
+}
+
+/* Position icons within input fields */
+.icon-colour {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+/* Adjust the padding of input fields to accommodate icons */
+.form-group input, .form-group textarea {
+  padding-left: 30px;
+}
+
+/* Ensure icons are properly positioned */
+.form-group {
+  position: relative;
+}
+
+.taller textarea {
+  height: 100px; /* Adjust height as needed */
+}
+.half-width {
+  width: calc(20% - 5px) !important; /* Adjust width calculation if necessary */
+}
+
+.taller {
+  height: auto; /* Change height to auto */
+}
+
+.taller input {
+  height: calc(100% - 30px); /* Subtract the height of the icon placeholder */
+}
+
+.taller i {
+  margin-top: 2px; /* Adjust as needed */
+}
+
+.taller textarea {
+  height: 150px; /* Adjust the height as needed */
+}
+
+.form-group.taller i {
+  height: calc(100% - 15px); /* Subtract the height of the icon placeholder */
+  resize: none; /* Prevent resizing of the textarea */
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px; /* Adjust margin between form groups */
+}
+
+.form-group i {
+  position: absolute;
+  top: 55%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: .8em;
+  color: #73737399; /* Adjust icon color if needed */
+  margin-left: .3em;
+  padding-left: .2em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 30px); /* Adjust width and padding as needed */
+  padding: 10px;
+  padding-left: 30px; /* Ensure enough space for the icon */
+  margin-left: 1em;
+  border-radius: 0em !important;
+  background-color: #ECECEC;
+  border: 1px solid #ECECEC; /* Adjust border color if needed */
+}
+
+.form-container {
+  position: relative;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+
+@media (min-width: 410px) and (max-width: 425px) {
+.logo{
+  width: 13em !important;
+}
+  .text-container h1{
+    font-size: 2.9em;
+    font-family: "Bebas Neue", sans-serif;
+font-style: italic;
+font-weight: 500;
+}
+  .text-container p{
+    font-size: .9em;
+}
+
+.text-container {
+  position: absolute;
+  top: 7%;
+  left: 5%;
+  width: 90%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #DE6A12;
+  border: 15px solid #DE6A12;
+  border-radius: 3.5rem;
+  margin-top: 24em;
+}  .logo{
+  margin-top: .5em;
+  width: 11em;
+}
+.carousel-item{
+  height: 1070px;
+}
+/* Gradient overlay */
+.gradient-overlay {
+  position: absolute;
+  top: 180%;
+  left: 0;
+  width: 100%;
+  height: 150px; /* Adjust the height as needed */
+  background: linear-gradient(to top, white, white(255, 255, 255, 0));
+  z-index: 1111;
+}
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.carouesl-btn{
+  display: none;
+}
+.carousel-slide-2{
+  display: none;
+}
+.form-header {
+  text-align: center;
+  font-size: 28px;
+  padding-top: .65em;
+  margin: 0 auto 20px;
+  color: #fafafa;
+  width: 100%;
+  background: #000d13;
+  height: 80px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 51 !important;
+  position: absolute;
+}
+
+/* CSS to change the font and size of the placeholder text */
+.form-control::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px; /* Change font size as needed */
+  color: #686868; /* Change placeholder color as needed */
+  font-weight: 400;
+  
+}
+.form-content {
+  padding-top: 6.8em !important;
+}
+.form-container {
+  position: relative;
+}
+.form-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Height of the border */
+    background: #2083BD;
+    z-index: -1; /* Ensure it stays behind the text */
+}
+.hvac::after {
+  content: "";
+  position: absolute;
+  bottom: 4px !important; /* Adjust the distance between text and underline */
+  left: 0;
+  width: 100%;
+  border-bottom: 5px solid #2083BD !important; /* Adjust the thickness as needed */
+
+  }
+  .hvac {
+    color: #fff !important;
+    position: relative;
+  }
+.quote-form {
+  width: 94%;
+  margin-left: 3.4% !important;
+  max-width: 700px; /* Adjust the maximum width as needed */
+  margin: auto;
+  border-bottom: 10px solid #2083BD;
+
+  padding: 0px;
+  background-color: #ffffff94;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  order: 2; /* Set the order to 2 to move the form below the text */
+  margin-top: 23.8em !important;
+  height: 500px;
+
+}
+
+.btn-colour-form {
+  background-color: #000d13;
+  padding: 0.75em 2.51em;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600 !important;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.23em;
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Optional: for rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Outer glow effect */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+
+/* Set up the form row to use flexbox */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: -20px; /* Adjust the gap as needed */
+  margin-bottom: 0px; /* Space between rows */
+}
+
+/* Ensure form-group elements within form-row take up equal space */
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Additional styles for input and textarea elements */
+.form-group input, .form-group textarea {
+  width: 100%;
+}
+
+/* Position icons within input fields */
+.icon-colour {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+/* Adjust the padding of input fields to accommodate icons */
+.form-group input, .form-group textarea {
+  padding-left: 30px;
+}
+
+/* Ensure icons are properly positioned */
+.form-group {
+  position: relative;
+}
+
+.taller textarea {
+  height: 100px; /* Adjust height as needed */
+}
+.half-width {
+  width: calc(20% - 5px) !important; /* Adjust width calculation if necessary */
+}
+
+.taller {
+  height: auto; /* Change height to auto */
+}
+
+.taller input {
+  height: calc(100% - 30px); /* Subtract the height of the icon placeholder */
+}
+
+.taller i {
+  margin-top: 2px; /* Adjust as needed */
+}
+
+.taller textarea {
+  height: 150px; /* Adjust the height as needed */
+}
+
+.form-group.taller i {
+  height: calc(100% - 15px); /* Subtract the height of the icon placeholder */
+  resize: none; /* Prevent resizing of the textarea */
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 15px; /* Adjust margin between form groups */
+}
+
+.form-group i {
+  position: absolute;
+  top: 55%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: .8em;
+  color: #73737399; /* Adjust icon color if needed */
+  margin-left: .3em;
+  padding-left: .2em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 30px); /* Adjust width and padding as needed */
+  padding: 10px;
+  padding-left: 30px; /* Ensure enough space for the icon */
+  margin-left: 1em;
+  border-radius: 0em !important;
+  background-color: #ECECEC;
+  border: 1px solid #ECECEC; /* Adjust border color if needed */
+}
+
+.form-container {
+  position: relative;
+}
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+}
 
